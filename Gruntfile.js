@@ -12,14 +12,14 @@ module.exports = function(grunt) {
             },
             dist: {
                 src: ['public/js/main.js', 'public/js/router/*.js', 'public/js/component_manager/*.js'],
-                dest: 'temp/temp_build.js'
+                dest: 'temp_build.js'
             }
         },
 
         webpack: {
 
             thinkacademy: {
-                entry: './temp/temp_build.js',
+                entry: './temp_build.js',
 
                 output: {
                     path: "./build/js/",
@@ -42,7 +42,7 @@ module.exports = function(grunt) {
         },
 
         clean: {
-            bundles: ["build/js/**/*", "temp/**", "!build/js/bundle.<%= bundle_hash.hash %>.js"],
+            bundles: ["build/js/**/*", "temp_build.js", "!build/js/bundle.<%= bundle_hash.hash %>.js", "!build/js/*bundle.*"],
         },
 
         watch: {
