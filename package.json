@@ -1,0 +1,30 @@
+{
+  "name": "webpack_test",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "consolidate": "^0.10.0",
+    "express": "3.4.8",
+    "jquery": "^2.1.1",
+    "swig": "^1.4.2",
+    "underscore": "^1.7.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-imagemin": "^0.9.2",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-webpack": "^1.0.8",
+    "html-webpack-plugin": "^1.1.0",
+    "load-grunt-tasks": "^1.0.0",
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "^1.6.5"
+  }
+}
